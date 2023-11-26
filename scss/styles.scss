@@ -24,3 +24,47 @@ FontAwesome
 }
 
 $max-width: 80em;
+
+.menu-item {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  margin: 1em;
+  padding: 1em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.24);
+  transition: box-shadow 0.3s ease-in-out;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  h2 {
+    color: rgb(22, 34, 42);
+    margin-top: 0.5em;
+  }
+
+  p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.9em;
+  }
+
+  button {
+    background-color: rgb(58, 96, 115);
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Bitter";
+    margin-top: 0.5em;
+
+    &:hover {
+      background-color: darken(rgb(58, 96, 115), 10%);
+    }
+  }
+  
+  &:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+}
